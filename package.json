@@ -1,0 +1,27 @@
+{
+  "name": "react-todo",
+  "version": "1.0.0",
+  "description": "My react todolist using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weezlo/react-todo.git"
+  },
+  "keywords": [
+    "react",
+    "todolist",
+    "todo",
+    "webpack",
+    "sandbox",
+    "newbie"
+  ],
+  "author": "Anis Nouira <weezlo.an@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Weezlo/react-todo/issues"
+  },
+  "homepage": "https://github.com/Weezlo/react-todo#readme"
+}
