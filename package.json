@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/Weezlo/react-todo#readme",
   "dependencies": {
-    "material-ui": "0.14.4",
+    "material-ui": "0.15.0-beta.2",
     "react": "15.0.2",
     "react-dom": "15.0.2"
   },

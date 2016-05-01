@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CheckBox from 'material-ui/lib/checkbox';
-import IconButton from 'material-ui/lib/icon-button';
-import {TableRow, TableRowColumn} from 'material-ui/lib/table';
-import ActionDelete from 'material-ui/lib/svg-icons/action/delete';
+import CheckBox from 'material-ui/Checkbox';
+import IconButton from 'material-ui/IconButton';
+import {TableRow, TableRowColumn} from 'material-ui/Table';
+import ActionDelete from 'material-ui/svg-icons/action/delete';
 
 class TodoItem extends React.Component{
   constructor(){
@@ -28,18 +28,24 @@ class TodoItem extends React.Component{
     let doneStyle = {
       textDecoration: 'line-through',
     };
+    let ttPosition = this.props.first
+                    ?"bottom-center"
+                    :"top-center";
     return (
       <TableRow>
         <TableRowColumn width={100}>
           <CheckBox defaultChecked={!!this.state.done}
                     onCheck={this.itemDone}
                     label={this.props.txt}
-                    labelStyle={this.state.done?doneStyle:{}}/>
+                    labelStyle={this.state.done?doneStyle:{}}
+                    iconStyle={{
+                      fill: 'green'
+                    }}/>
         </TableRowColumn>
         <TableRowColumn width={1} style={{overflow:'visible'}}>
           <IconButton tooltip="Remove"
             onClick={this.props.removeItem}
-            tooltipPosition="top-center">
+            tooltipPosition={ttPosition}>
             <ActionDelete />
           </IconButton>
         </TableRowColumn>
